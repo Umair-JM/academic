@@ -118,10 +118,10 @@ export const conferencePubs = [
 ];
 
 export const certHighlights = [
-  { issuer: "Coursera / IBM", name: "Machine Learning & Data Science foundations", status: "done" },
-  { issuer: "n8n", name: "Automation 101, 102 & 103", status: "progress" },
-  { issuer: "IBM", name: "Cybersecurity Analyst", status: "done" },
-  { issuer: "Princeton", name: "Bitcoin & Cryptocurrency Technologies", status: "done" },
-  { issuer: "Microsoft", name: "SC-200 Security Operations", status: "progress" },
-  { issuer: "Cisco", name: "CCNA", status: "progress" },
+  { issuer: "Coursera / IBM", name: "Machine Learning & Data Science foundations" },
+  { issuer: "n8n", name: "Automation 101, 102 & 103" },
+  { issuer: "IBM", name: "Cybersecurity Analyst" },
+  { issuer: "Princeton", name: "Bitcoin & Cryptocurrency Technologies" },
+  { issuer: "Microsoft", name: "SC-200 Security Operations" },
+  { issuer: "Cisco", name: "CCNA" },
 ];
