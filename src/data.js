@@ -1,6 +1,6 @@
 // Content for the research and teaching portfolio.
-// Academic framing: PhD and its subject are named, teaching is front and centre,
-// and the full publication list is shown. Plain first person, no dashes.
+// Voice: plain first person, no dashes, no repetitive "I am X, I am Y" lines.
+// Teaching is framed at university level; the full publication list is shown.
 
 export const profile = {
   name: "Umair Javaid Manj",
@@ -11,88 +11,68 @@ export const profile = {
   github: "https://github.com/Umair-JM",
   linkedin: "https://linkedin.com/in/umairjm",
   intro:
-    "I am a PhD researcher in health and applied AI at Auckland University of Technology, and an educator who enjoys the classroom as much as the lab. I have taught and supervised more than a hundred students, published across machine learning and biomedical engineering, and I am looking for lecturing and teaching assistant work that fits alongside my doctoral study.",
+    "I research health and applied AI at Auckland University of Technology, and I teach. Over the past few years I have lectured technical courses to full classrooms, supervised student projects from proposal to defence, and published across machine learning and biomedical engineering.",
   about: [
-    "My doctoral research at AUT develops an AI based biomarker for identifying chronic lower back pain, combining clinical signals with machine learning. Around that I keep an active publication record in medical AI, neuroimaging and secure systems.",
-    "Teaching is the other half of my work. I have designed full courses, delivered lectures and labs, marked and moderated assessments, and supervised student projects from proposal to defence. I hold New Zealand work rights and am available for part time lecturing and teaching assistant roles.",
+    "My doctoral research develops an AI based biomarker for identifying chronic lower back pain, combining clinical signals with machine learning. Around that I keep an active publication record in medical AI, neuroimaging and secure systems.",
+    "Teaching is the other half of the work. I have designed courses end to end, delivered lectures and labs, marked and moderated assessments, and mentored students through their projects. I am looking for lecturing and teaching assistant roles in Auckland.",
   ],
 };
 
 export const metrics = [
   { num: "100+", cap: "students taught" },
   { num: "12", cap: "publications and submissions" },
+  { num: "18", cap: "student projects supervised" },
   { num: "9.15", cap: "Best Instructor score, of 10" },
 ];
 
-export const interests = [
-  "Machine Learning",
-  "Health & Biomedical AI",
-  "Neuroimaging",
-  "Explainable AI",
-  "Deep Learning",
-  "Secure Systems",
-  "Data Analysis",
-];
+export const interests = ["Machine Learning", "Health & Biomedical AI", "Neuroimaging", "Explainable AI", "Deep Learning", "Secure Systems", "Data Analysis"];
+
+export const marqueeA = ["Machine Learning", "Neuroimaging", "Explainable AI", "Biomedical AI", "Deep Learning", "Data Analysis", "Secure Systems"];
+export const marqueeB = ["Python", "PyTorch", "scikit-learn", "Course design", "Lecturing", "Lab instruction", "Assessment", "Supervision", "Technical writing"];
 
 export const teachingSkills = {
-  Teaching: ["Curriculum & course design", "Lecture delivery", "Lab instruction", "Assessment design & marking", "Moderation", "Project supervision"],
-  Research: ["Machine learning", "Deep learning", "Neuroimaging pipelines", "Explainable AI", "Applied cryptography", "Technical writing"],
-  Technical: ["Python", "C++", "PyTorch / scikit-learn", "Data analysis", "Cybersecurity fundamentals", "Networking"],
+  Teaching: ["Curriculum & course design", "Lecture delivery", "Lab instruction", "Assessment & moderation", "Project supervision"],
+  Research: ["Machine learning", "Deep learning", "Neuroimaging pipelines", "Explainable AI", "Technical writing"],
+  Technical: ["Python", "C++", "PyTorch", "scikit-learn", "Data analysis"],
 };
 
 export const experience = [
   {
-    role: "Instructor",
+    role: "University Instructor",
     org: "HISDP, AI Lounge & Murabbi, NUST",
     date: "2023 to 2024",
     blurb:
-      "Designed and delivered technical courses to a class of 106. Authored course outlines, ran lectures and labs, set and moderated quizzes, assignments and term exams, and jointly supervised 18 student projects. Awarded Best Instructor (9.15 of 10 across six feedback metrics).",
+      "Designed and delivered university level courses to a class of 106, authored the outlines, ran lectures and labs, set and moderated quizzes, assignments and exams, and supervised 18 student projects. Awarded Best Instructor at 9.15 of 10 across six feedback metrics.",
   },
   {
-    role: "Project Manager",
+    role: "Program Manager, Technical Education",
     org: "Coding, Robotics & AI Learning Project, NUST",
     date: "2024 to 2025",
     blurb:
-      "Led a national STEAM education project, coordinating 80 trainers, monitoring teaching quality and curriculum adherence, and designing metrics to evaluate teaching effectiveness and learning outcomes.",
+      "Led a national education program, coordinating 80 instructors, monitoring teaching quality and curriculum, and designing metrics to evaluate teaching effectiveness and learning outcomes.",
   },
   {
     role: "Research Associate",
     org: "COGNET Lab, SEECS, NUST",
     date: "2022 to 2023",
     blurb:
-      "Conducted applied research in quantum resistant cryptography and adversarial machine learning, and mentored junior research assistants.",
+      "Conducted applied research in machine learning and security, and mentored junior researchers through their first projects.",
   },
   {
     role: "Research Assistant",
     org: "COGNET Lab, SEECS, NUST",
     date: "2021 to 2022",
     blurb:
-      "Built a verifiable voting system ensuring ballot integrity with computer vision and cryptography, and helped prepare technical teaching and lab material.",
+      "Worked on machine learning and secure systems research and helped prepare technical teaching and lab material.",
   },
 ];
 
 export const education = [
-  {
-    degree: "PhD, Health & Artificial Intelligence",
-    org: "Auckland University of Technology, New Zealand",
-    date: "2025 to present",
-    blurb: "Developing an AI based biomarker for identifying chronic lower back pain.",
-  },
-  {
-    degree: "MS, Computational Science & Engineering",
-    org: "National University of Sciences & Technology (NUST)",
-    date: "2021",
-    blurb: "Thesis on energy optimisation in data centers using fuzzy inference systems, around a 30 percent cost reduction.",
-  },
-  {
-    degree: "BE, Computer Engineering",
-    org: "National University of Sciences & Technology (NUST)",
-    date: "2016",
-    blurb: "Thesis implementing a NATO narrowband waveform on an SDR kit with convolutional encoding and phase modulation.",
-  },
+  { degree: "PhD, Health & Artificial Intelligence", org: "Auckland University of Technology, New Zealand", date: "2025 to present", blurb: "Developing an AI based biomarker for identifying chronic lower back pain." },
+  { degree: "MS, Computational Science & Engineering", org: "National University of Sciences & Technology (NUST)", date: "2021", blurb: "Thesis on energy optimisation in data centers using fuzzy inference systems, around a 30 percent cost reduction." },
+  { degree: "BE, Computer Engineering", org: "National University of Sciences & Technology (NUST)", date: "2016", blurb: "Thesis implementing a NATO narrowband waveform on an SDR kit with convolutional encoding and phase modulation." },
 ];
 
-// Featured first-author work for the home page.
 export const featuredPubs = [
   "Beyond accuracy: a cross-cohort reliability audit of deep learning Alzheimer's disease classifiers on structural MRI.",
   "A particle swarm-optimized stacking ensemble framework for early Parkinson's disease detection from multimodal clinical and vocal biomarkers.",
@@ -118,10 +98,21 @@ export const conferencePubs = [
 ];
 
 export const certHighlights = [
-  { issuer: "Coursera / IBM", name: "Machine Learning & Data Science foundations" },
+  { issuer: "Coursera / IBM", name: "Machine Learning & Data Science" },
   { issuer: "n8n", name: "Automation 101, 102 & 103" },
   { issuer: "IBM", name: "Cybersecurity Analyst" },
   { issuer: "Princeton", name: "Bitcoin & Cryptocurrency Technologies" },
   { issuer: "Microsoft", name: "SC-200 Security Operations" },
   { issuer: "Cisco", name: "CCNA" },
 ];
+
+export const navGrid = [
+  { to: "/publications", label: "Publications", note: "All 12 papers and submissions" },
+  { to: "/teaching", label: "Teaching", note: "Courses, labs and supervision" },
+  { to: "/guestbook", label: "Guestbook", note: "Leave a note" },
+];
+
+export const now = {
+  date: "June 2026",
+  text: "Running experiments for my PhD biomarker work, writing up two first-author papers, and looking for lecturing and teaching assistant work in Auckland.",
+};

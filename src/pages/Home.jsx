@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { profile, metrics, interests, education, featuredPubs, certHighlights } from "../data.js";
+import { profile, metrics, interests, marqueeA, marqueeB, experience, education, featuredPubs, certHighlights, navGrid, now } from "../data.js";
 import { Reveal, Stagger, StaggerItem, SpotlightCard, Magnetic } from "../lib/motion.jsx";
+import Marquee from "../components/Marquee.jsx";
+import WorldStrip from "../components/WorldStrip.jsx";
 import Footer from "../components/Footer.jsx";
-import LocalTime from "../components/LocalTime.jsx";
 
 function Row({ label, children, id }) {
   return (
@@ -17,38 +18,38 @@ function Row({ label, children, id }) {
 export default function Home() {
   return (
     <>
-      <section className="hero">
+      <section className="hero hero-split">
+        <div className="hero-copy">
+          <motion.div className="label" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
+            Research & Teaching
+          </motion.div>
+          <motion.h1
+            className="hero-lead"
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+          >
+            I research <span className="hl">applied AI</span> and I love to teach it.
+          </motion.h1>
+          <Reveal as="p" className="hero-body" delay={0.1}>{profile.intro}</Reveal>
+          <Stagger className="profiles" gap={0.06}>
+            <StaggerItem as="span"><Magnetic as={Link} className="pill" to="/publications">Publications</Magnetic></StaggerItem>
+            <StaggerItem as="span"><Magnetic as={Link} className="pill" to="/teaching">Teaching</Magnetic></StaggerItem>
+            <StaggerItem as="span"><Magnetic as="a" className="pill" href={profile.linkedin} target="_blank" rel="noopener">LinkedIn</Magnetic></StaggerItem>
+            <StaggerItem as="span"><Magnetic as="a" className="pill" href={`mailto:${profile.email}`}>Email</Magnetic></StaggerItem>
+          </Stagger>
+        </div>
         <motion.div
-          className="hero-head"
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+          className="hero-portrait"
+          initial={{ opacity: 0, scale: 0.96 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
         >
-          <div className="avatar" aria-hidden>UJ</div>
-          <div className="avatar-meta">
-            <div className="nm">{profile.name}</div>
-            <div className="rl">{profile.role}</div>
-          </div>
+          <motion.img src="/portrait.png" alt="Umair Javaid Manj" animate={{ y: [0, -10, 0] }} transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }} draggable="false" />
         </motion.div>
-
-        <motion.h1
-          className="hero-lead"
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.05, ease: [0.22, 1, 0.36, 1] }}
-        >
-          I research <span className="hl">applied AI</span> and I love to teach it.
-        </motion.h1>
-
-        <Reveal as="p" className="hero-body" delay={0.1}>{profile.intro}</Reveal>
-
-        <Stagger className="profiles" gap={0.06}>
-          <StaggerItem as="span"><Magnetic as={Link} className="pill" to="/publications">Publications</Magnetic></StaggerItem>
-          <StaggerItem as="span"><Magnetic as={Link} className="pill" to="/teaching">Teaching</Magnetic></StaggerItem>
-          <StaggerItem as="span"><Magnetic as="a" className="pill" href={profile.linkedin} target="_blank" rel="noopener">LinkedIn</Magnetic></StaggerItem>
-          <StaggerItem as="span"><Magnetic as="a" className="pill" href={`mailto:${profile.email}`}>Email</Magnetic></StaggerItem>
-        </Stagger>
       </section>
+
+      <Marquee items={marqueeA} speed={30} />
 
       <Row label="At a glance">
         <Stagger className="metrics" gap={0.08}>
@@ -73,11 +74,21 @@ export default function Home() {
         </Stagger>
       </Row>
 
+      <Row label="Experience" id="experience">
+        <div className="xp-list">
+          {experience.map((x, i) => (
+            <Reveal className="xp-item" key={x.role} delay={Math.min(i * 0.04, 0.2)}>
+              <div className="xp-top"><h4>{x.role}</h4><span className="xp-date">{x.date}</span></div>
+              <div className="xp-org">{x.org}</div>
+              <p>{x.blurb}</p>
+            </Reveal>
+          ))}
+        </div>
+      </Row>
+
       <Row label="Selected work">
         <Stagger className="pub-feature" gap={0.06} as="ul">
-          {featuredPubs.map((t) => (
-            <StaggerItem as="li" key={t}><Link to="/publications">{t}</Link></StaggerItem>
-          ))}
+          {featuredPubs.map((t) => (<StaggerItem as="li" key={t}><Link to="/publications">{t}</Link></StaggerItem>))}
         </Stagger>
         <div className="see-all"><Link className="alink" to="/publications">All publications</Link></div>
       </Row>
@@ -99,13 +110,15 @@ export default function Home() {
           {certHighlights.map((c) => (
             <StaggerItem key={c.name}>
               <SpotlightCard className="cert-chip">
-                <span className="issuer">{c.issuer}{c.status === "progress" && <span className="tag-progress">in progress</span>}</span>
+                <span className="issuer">{c.issuer}</span>
                 <span className="nm">{c.name}</span>
               </SpotlightCard>
             </StaggerItem>
           ))}
         </Stagger>
       </Row>
+
+      <Marquee items={marqueeB} reverse speed={36} />
 
       <Reveal as="p" className="cta-line">Teaching role or research collaboration? <span className="hl">Let's talk.</span></Reveal>
 
@@ -117,7 +130,28 @@ export default function Home() {
         </div>
       </Row>
 
-      <Row label="Local time"><LocalTime /></Row>
+      <Row label="Time & weather"><WorldStrip /></Row>
+
+      <Row label="Explore">
+        <Stagger className="nav-grid" gap={0.05}>
+          {navGrid.map((n) => (
+            <StaggerItem key={n.to}>
+              <Link to={n.to}>
+                <SpotlightCard className="nav-card">
+                  <span className="nav-card-label">{n.label}</span>
+                  <span className="nav-card-note">{n.note}</span>
+                  <span className="nav-card-arrow">↗</span>
+                </SpotlightCard>
+              </Link>
+            </StaggerItem>
+          ))}
+        </Stagger>
+      </Row>
+
+      <Row label="Now">
+        <Reveal as="p">{now.text}</Reveal>
+        <Reveal as="p" className="muted" delay={0.05}>Updated {now.date}.</Reveal>
+      </Row>
 
       <Footer />
     </>

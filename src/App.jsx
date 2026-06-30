@@ -4,6 +4,7 @@ import TopBar from "./components/TopBar.jsx";
 import Home from "./pages/Home.jsx";
 import Publications from "./pages/Publications.jsx";
 import Teaching from "./pages/Teaching.jsx";
+import Guestbook from "./pages/Guestbook.jsx";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -23,6 +24,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/teaching" element={<Teaching />} />
           <Route path="/publications" element={<Publications />} />
+          <Route path="/guestbook" element={<Guestbook />} />
           <Route path="*" element={<Home />} />
         </Routes>
       </main>
