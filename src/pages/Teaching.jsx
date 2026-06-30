@@ -1,4 +1,4 @@
-import { experience, teachingSkills } from "../data.js";
+import { experience, teachingSkills, courses } from "../data.js";
 import { Reveal, Stagger, StaggerItem } from "../lib/motion.jsx";
 import Footer from "../components/Footer.jsx";
 
@@ -9,12 +9,18 @@ export default function Teaching() {
         <Reveal as="div" className="label">In the classroom</Reveal>
         <Reveal as="h1" delay={0.05}>Teaching & supervision</Reveal>
         <Reveal as="p" delay={0.1}>
-          I have taught more than a hundred students across technical subjects, designed courses end
-          to end, and supervised student projects from proposal to defence. Here is the teaching and
-          mentoring side of my work.
+          I have taught across technical subjects, designed courses end to end, and supervised
+          student projects from proposal to defence. Here is the teaching and mentoring side of my
+          work.
         </Reveal>
       </div>
 
+      <h2 className="group-title">Courses I can teach</h2>
+      <Stagger className="tags" gap={0.04} as="ul">
+        {courses.map((c) => (<StaggerItem as="li" key={c}>{c}</StaggerItem>))}
+      </Stagger>
+
+      <h2 className="group-title">Experience</h2>
       <div className="xp-list">
         {experience.map((x, i) => (
           <Reveal className="xp-item" key={x.role} delay={Math.min(i * 0.05, 0.2)}>
