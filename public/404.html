@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting…</title>
+    <script>
+      // SPA fallback for GitHub Pages project site. Keep the /academic prefix
+      // (one path segment) and bounce to the app root, where index.html
+      // restores the originally requested deep link.
+      (function () {
+        sessionStorage.redirect = location.href;
+        location.replace(location.origin + "/academic/");
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>
