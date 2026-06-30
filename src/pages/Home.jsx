@@ -29,19 +29,20 @@ export default function Home() {
     const el = heroRef.current;
     if (!el) return;
     const ctx = gsap.context(() => {
-      gsap.to(".hero-portrait", {
-        yPercent: -14,
-        opacity: 0.65,
-        ease: "none",
-        scrollTrigger: { trigger: el, start: "top top", end: "bottom top", scrub: 0.4 },
-      });
-      gsap.to(".hero-copy", {
-        yPercent: -6,
-        ease: "none",
-        scrollTrigger: { trigger: el, start: "top top", end: "bottom top", scrub: 0.6 },
-      });
+      // Gentle parallax only; opacity is left to the framer-motion entrance so
+      // the two never fight and the portrait can't snap to invisible on scroll.
+      gsap.fromTo(".hero-portrait",
+        { yPercent: 0 },
+        { yPercent: -12, ease: "none", immediateRender: false,
+          scrollTrigger: { trigger: el, start: "top top", end: "bottom top", scrub: 0.4, invalidateOnRefresh: true } });
+      gsap.fromTo(".hero-copy",
+        { yPercent: 0 },
+        { yPercent: -6, ease: "none", immediateRender: false,
+          scrollTrigger: { trigger: el, start: "top top", end: "bottom top", scrub: 0.6, invalidateOnRefresh: true } });
     }, el);
-    return () => ctx.revert();
+    const onLoad = () => ScrollTrigger.refresh();
+    window.addEventListener("load", onLoad);
+    return () => { window.removeEventListener("load", onLoad); ctx.revert(); };
   }, []);
 
   return (
