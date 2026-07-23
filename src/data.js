@@ -46,14 +46,14 @@ export const teachingSkills = {
 
 export const experience = [
   {
-    role: "University Instructor",
+    role: "Instructor",
     org: "HISDP, AI Lounge & Murabbi, NUST",
     date: "2023 to 2024",
     blurb:
       "Designed and delivered university level courses, authored the outlines, ran lectures and labs, set and moderated assessments, and supervised 18 student projects. Awarded Best Instructor.",
   },
   {
-    role: "Program Manager, Technical Education",
+    role: "Program Manager",
     org: "Coding, Robotics & AI Learning Project, NUST",
     date: "2024 to 2025",
     blurb:
@@ -77,8 +77,8 @@ export const experience = [
 
 export const education = [
   { degree: "PhD, Health & Artificial Intelligence", org: "Auckland University of Technology, New Zealand", date: "2025 to present", blurb: "Developing an AI based biomarker for identifying chronic lower back pain." },
-  { degree: "MS, Computational Science & Engineering", org: "National University of Sciences & Technology (NUST)", date: "2021", blurb: "Thesis on energy optimisation in data centers using fuzzy inference systems, around a 30 percent cost reduction." },
-  { degree: "BE, Computer Engineering", org: "National University of Sciences & Technology (NUST)", date: "2016", blurb: "Thesis implementing a NATO narrowband waveform on an SDR kit with convolutional encoding and phase modulation." },
+  { degree: "MS, Computational Science & Engineering", org: "National University of Sciences & Technology (NUST)", date: "2017 to 2021", blurb: "Thesis on energy optimisation in data centers using fuzzy inference systems, around a 30 percent cost reduction." },
+  { degree: "BE, Computer Engineering", org: "National University of Sciences & Technology (NUST)", date: "2012 to 2016", blurb: "Thesis implementing a NATO narrowband waveform on an SDR kit with convolutional encoding and phase modulation." },
 ];
 
 export const featuredPubs = [
