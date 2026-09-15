@@ -20,7 +20,7 @@ export const profile = {
 
 export const metrics = [
   { num: "5", cap: "courses taught" },
-  { num: "15", cap: "publications and submissions" },
+  { num: "12", cap: "publications and submissions" },
   { num: "18", cap: "student projects supervised" },
 ];
 
@@ -83,7 +83,7 @@ export const education = [
 
 export const featuredPubs = [
   "Cortical mapping of paraspinal afferent inputs in healthy adults and people with chronic low back pain: a scoping review.",
-  "Cognitive cyber communication architecture with self-evolving AI agents for zero-trust 6G networks.",
+  "Neuro-symbolic AI-driven secure communication framework for autonomous cyber-physical systems.",
   "Sleep disorder prediction with PSO-optimized machine and deep learning models.",
 ];
 
@@ -93,9 +93,6 @@ export const publications = [
   { cite: "Rizvi, D. Q., Manj, U. J., Majeed, M., & Haq, M. I. U. (2025). Sleep disorder prediction with PSO-optimized machine and deep learning models. <em>5th International Conference on Digital Futures and Transformative Technologies (ICODT2)</em>.", status: "Published", badge: "published" },
   { cite: "Haq, M. I. U., Ahmad, Z., Manj, U. J., Akhter, M. N., Arfeen, Z. A., & Qamar, S. D. (2026). Bio-inspired soft robotic gripper with variable stiffness using magneto-rheological control. <em>7th International Conference on Robotics and Automation in Industry (ICRAI)</em>.", status: "Published", badge: "published" },
   { cite: "Haq, M. I. U., Manj, U. J., Paracha, S. Q., Imam, Y., Rizvi, D. Q., & Farooqi, A. R. (2026). Neuro-symbolic AI-driven secure communication framework for autonomous cyber-physical systems. <em>APAN 2026, Track 2: AI, Machine Learning and Computer Vision</em>.", status: "Published", badge: "published" },
-  { cite: "Manj, U. J., Haq, M. I. U., Qamar, D., Ali, H., Perwaiz, N., & Imam, Y. (2026). Cognitive cyber communication architecture with self-evolving AI agents for zero-trust 6G networks. <em>International Conference on Digital Futures and Transformative Technologies (ICoDT2 2026)</em>.", status: "Submitted", badge: "review" },
-  { cite: "Meladi, M. U. R., Manj, U. J., Salam, A., Qamar, S. D., Haq, M. I. U., & Perwaiz, N. (2026). SwarmStack: a PSO-optimized machine learning ensemble for capacity degradation and remaining useful life prediction in Li-ion cells. <em>AI2ML 2026: International Conference on Artificial Intelligence and Machine Learning</em>.", status: "Submitted", badge: "review" },
-  { cite: "Qamar, D., Manj, U. J., Haq, M. I. U., Arshad, H., Rizvi, H., & Perwaiz, N. (2026). HistoFormerFusion: an adaptive CNN–Transformer framework with attention-based feature fusion for multiclass histopathological tissue classification. <em>AI2ML 2026: International Conference on Artificial Intelligence and Machine Learning</em>.", status: "Submitted", badge: "review" },
   { cite: "Haq, M. I. U., Manj, U. J., Qamar, D., Imam, Y., Yasin, J., & Perwaiz, N. (2026). Rethinking intrusion detection evaluation: evidence of performance inflation under random data splits. <em>International Conference on Frontiers of Information Technology (FIT26), Machine Learning and its Applications Track</em>.", status: "Submitted", badge: "review" },
   { cite: "Murad, M. A., Manj, U. J., Haq, M. I. U., Qamar, D., & Imam, Y. (2026). Rethinking intrusion detection evaluation: evidence from temporal and unseen attack generalization. <em>International Conference on Frontiers of Information Technology (FIT26), Machine Learning and its Applications Track</em>.", status: "Submitted", badge: "review" },
   { cite: "Akhter, M. N., Ali, H., Niazi, I. K., Manj, U. J., & Taylor, D. (2026). Predicting ground reaction force during sit to walk: towards kinetically instrumenting the Timed Up and Go test. <em>Medical & Biological Engineering & Computing</em>.", status: "Submitted", badge: "review" },
@@ -117,7 +114,7 @@ export const certHighlights = [
 ];
 
 export const navGrid = [
-  { to: "/publications", label: "Publications", note: "All 15 papers and submissions" },
+  { to: "/publications", label: "Publications", note: "All 12 papers and submissions" },
   { to: "/teaching", label: "Teaching", note: "Courses, labs and supervision" },
   { to: "/guestbook", label: "Guestbook", note: "Leave a note" },
 ];
