@@ -20,7 +20,7 @@ export const profile = {
 
 export const metrics = [
   { num: "5", cap: "courses taught" },
-  { num: "13", cap: "publications and submissions" },
+  { num: "12", cap: "publications and submissions" },
   { num: "18", cap: "student projects supervised" },
 ];
 
@@ -82,8 +82,8 @@ export const education = [
 ];
 
 export const featuredPubs = [
-  "Cortical mapping of paraspinal afferent inputs in healthy adults and people with chronic low back pain: a scoping review.",
   "A comparative assessment of deep fusion architectures for diabetes screening using plantar thermograms.",
+  "Neuro-symbolic AI-driven secure communication framework for autonomous cyber-physical systems.",
   "Sleep disorder prediction with PSO-optimized machine and deep learning models.",
 ];
 
@@ -102,7 +102,6 @@ export const publications = [
   { cite: "Haq, M. I. U., Manj, U. J., Qamar, D., Fatima, K., Imam, Y., & Rizvi, H. (2026). Quantized CNN–Transformer inference on FPGA for real-time RF spectrum intelligence and adaptive jamming defense. <em>Engineering Reports</em>.", status: "Submitted", badge: "review" },
   { cite: "Mabood, A., Shahzad, S., Sultana, S., Perwaiz, N., & Manj, U. J. (2026). Real-time radiometric thermal fire detection with OTFAN: accuracy meets deployability. <em>Sensing and Imaging</em>.", status: "Submitted", badge: "review" },
   { cite: "Manj, U. J., Rizvi, S. D. Q., Niazi, I. K., Akhter, M. N., & Ali, H. (2026). A comparative assessment of deep fusion architectures for diabetes screening using plantar thermograms. <em>The Computer Journal</em>.", status: "Submitted", badge: "review" },
-  { cite: "Manj, U. J., Haavik, H., Niazi, I. K., Ghani, U., & Taylor, D. (2026). Cortical mapping of paraspinal afferent inputs in healthy adults and people with chronic low back pain: a scoping review.", status: "Under review", badge: "review" },
 ];
 
 export const certHighlights = [
@@ -115,7 +114,7 @@ export const certHighlights = [
 ];
 
 export const navGrid = [
-  { to: "/publications", label: "Publications", note: "All 13 papers and submissions" },
+  { to: "/publications", label: "Publications", note: "All 12 papers and submissions" },
   { to: "/teaching", label: "Teaching", note: "Courses, labs and supervision" },
   { to: "/guestbook", label: "Guestbook", note: "Leave a note" },
 ];
