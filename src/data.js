@@ -20,7 +20,7 @@ export const profile = {
 
 export const metrics = [
   { num: "5", cap: "courses taught" },
-  { num: "12", cap: "publications and submissions" },
+  { num: "13", cap: "publications and submissions" },
   { num: "18", cap: "student projects supervised" },
 ];
 
@@ -84,7 +84,7 @@ export const education = [
 export const featuredPubs = [
   "A comparative assessment of deep fusion architectures for diabetes screening using plantar thermograms.",
   "Neuro-symbolic AI-driven secure communication framework for autonomous cyber-physical systems.",
-  "Sleep disorder prediction with PSO-optimized machine and deep learning models.",
+  "Speaker leakage and subject level accuracy in voice biomarkers for Parkinson's disease.",
 ];
 
 // Authoritative list (Manj Publication List). Ordered published, submitted,
@@ -102,6 +102,7 @@ export const publications = [
   { cite: "Haq, M. I. U., Manj, U. J., Qamar, D., Fatima, K., Imam, Y., & Rizvi, H. (2026). Quantized CNN–Transformer inference on FPGA for real-time RF spectrum intelligence and adaptive jamming defense. <em>Engineering Reports</em>.", status: "Submitted", badge: "review" },
   { cite: "Mabood, A., Shahzad, S., Sultana, S., Perwaiz, N., & Manj, U. J. (2026). Real-time radiometric thermal fire detection with OTFAN: accuracy meets deployability. <em>Sensing and Imaging</em>.", status: "Submitted", badge: "review" },
   { cite: "Manj, U. J., Rizvi, S. D. Q., Niazi, I. K., Akhter, M. N., & Ali, H. (2026). A comparative assessment of deep fusion architectures for diabetes screening using plantar thermograms. <em>The Computer Journal</em>.", status: "Submitted", badge: "review" },
+  { cite: "Manj, U. J., Qamar, D., Rashid, M. A., Perwaiz, N., & Niazi, I. K. (2026). Speaker leakage and subject level accuracy in voice biomarkers for Parkinson's disease. <em>Machine Learning: Health</em>.", status: "Submitted", badge: "review" },
 ];
 
 export const certHighlights = [
@@ -114,7 +115,7 @@ export const certHighlights = [
 ];
 
 export const navGrid = [
-  { to: "/publications", label: "Publications", note: "All 12 papers and submissions" },
+  { to: "/publications", label: "Publications", note: "All 13 papers and submissions" },
   { to: "/teaching", label: "Teaching", note: "Courses, labs and supervision" },
   { to: "/guestbook", label: "Guestbook", note: "Leave a note" },
 ];
