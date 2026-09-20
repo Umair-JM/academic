@@ -57,7 +57,7 @@ export const experience = [
     org: "Coding, Robotics & AI Learning Project, NUST",
     date: "2024 to 2025",
     blurb:
-      "Led a national education program, coordinating 80 instructors, monitoring teaching quality and curriculum, and designing metrics to evaluate teaching effectiveness and learning outcomes.",
+      "Ran a national training program in cybersecurity, networking and AI, from scheduling and delivery through to reporting, and set the curriculum standard and how teaching quality was measured.",
   },
   {
     role: "Research Associate",
@@ -82,7 +82,7 @@ export const education = [
 ];
 
 export const featuredPubs = [
-  "A comparative assessment of deep fusion architectures for diabetes screening using plantar thermograms.",
+  "Gated feature fusion and age confounding in plantar thermography for diabetes screening.",
   "Neuro-symbolic AI-driven secure communication framework for autonomous cyber-physical systems.",
   "Speaker leakage and subject level accuracy in voice biomarkers for Parkinson's disease.",
 ];
@@ -101,7 +101,7 @@ export const publications = [
   { cite: "Naveed, M., Perwaiz, N., Sultana, S., Ahmad, M., Fraz, M. M., & Manj, U. J. (2026). V-SenseDrive-PK: a multimodal benchmark dataset for driver behaviour analysis in Pakistan's urban and highway traffic. <em>International Journal of Computational Intelligence Systems</em>.", status: "Submitted", badge: "review" },
   { cite: "Haq, M. I. U., Manj, U. J., Qamar, D., Fatima, K., Imam, Y., & Rizvi, H. (2026). Quantized CNN–Transformer inference on FPGA for real-time RF spectrum intelligence and adaptive jamming defense. <em>Engineering Reports</em>.", status: "Submitted", badge: "review" },
   { cite: "Mabood, A., Shahzad, S., Sultana, S., Perwaiz, N., & Manj, U. J. (2026). Real-time radiometric thermal fire detection with OTFAN: accuracy meets deployability. <em>Sensing and Imaging</em>.", status: "Submitted", badge: "review" },
-  { cite: "Manj, U. J., Rizvi, S. D. Q., Niazi, I. K., Akhter, M. N., & Ali, H. (2026). A comparative assessment of deep fusion architectures for diabetes screening using plantar thermograms. <em>The Computer Journal</em>.", status: "Submitted", badge: "review" },
+  { cite: "Manj, U. J., Rizvi, S. D. Q., Niazi, I. K., Akhter, M. N., & Ali, H. (2026). Gated feature fusion and age confounding in plantar thermography for diabetes screening. <em>Biomedical Physics & Engineering Express</em>.", status: "Submitted", badge: "review" },
   { cite: "Manj, U. J., Qamar, D., Rashid, M. A., Perwaiz, N., & Niazi, I. K. (2026). Speaker leakage and subject level accuracy in voice biomarkers for Parkinson's disease. <em>Machine Learning: Health</em>.", status: "Submitted", badge: "review" },
 ];
 
