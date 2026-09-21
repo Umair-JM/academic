@@ -82,9 +82,9 @@ export const education = [
 ];
 
 export const featuredPubs = [
-  "Gated feature fusion and age confounding in plantar thermography for diabetes screening.",
-  "Neuro-symbolic AI-driven secure communication framework for autonomous cyber-physical systems.",
-  "Speaker leakage and subject level accuracy in voice biomarkers for Parkinson's disease.",
+  "Gated feature fusion and age confounding in plantar thermography for diabetes screening",
+  "Neuro-symbolic AI-driven secure communication framework for autonomous cyber-physical systems",
+  "Speaker leakage and subject level accuracy in voice biomarkers for Parkinson's disease",
 ];
 
 // Authoritative list (Manj Publication List). Ordered published, submitted,
