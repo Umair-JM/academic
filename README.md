@@ -1,4 +1,4 @@
 
-Live: https://umair-jm.github.io/academic/
+Live: https://umairjmanj.github.io/academic/
 
  

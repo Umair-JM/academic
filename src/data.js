@@ -8,7 +8,7 @@ export const profile = {
   location: "Auckland, New Zealand",
   email: "umairjavaidmanj@gmail.com",
   phone: "+64 20 4483186",
-  github: "https://github.com/Umair-JM",
+  github: "https://github.com/umairjmanj",
   linkedin: "https://linkedin.com/in/umairjm",
   intro:
     "I research health and applied AI at Auckland University of Technology, and I teach. Over the past few years I have lectured technical courses to full classrooms, supervised student projects from proposal to defence, and published across machine learning and biomedical engineering.",
